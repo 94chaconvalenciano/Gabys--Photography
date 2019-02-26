@@ -1,0 +1,403 @@
+
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-widht,initial-scale=1">
+
+       <title>Gaby's Photography</title>
+       <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Source+Sans+Pro" rel="stylesheet">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+
+       <link rel="stylesheet" href="gabys%20photography%20%20pagina%20web%20.css">
+      
+       <style type="text/css">
+
+       </style>
+      </head>
+	<script src="https://code.jquery.com/jquery-1.12.4.js">
+
+		
+	</script>
+	<body>
+		
+		
+
+		<header class="text-center" >
+		<figure class="Logo">
+			<img src="Logo%20para%20facebook.jpg" style="width:150px">
+		</figure>
+		
+		
+
+		<div class="scrollmenu">
+			<a href="#portafolio">portafolio</a>
+			<a href="#sobre mi"> sobre mi</a>
+			<a href="#contacto">contacto</a>
+			<a href="#informacion">informacion</a>
+			</div>
+		<nav>
+		<ol>
+			
+			<div class="drw">
+				
+			</ul>
+		 
+		</ol>
+		</nav >
+	</header>
+<section>
+<div class="bg-imagen"></div>
+<div class="bg-text">
+	<h1 style="font-size: 50px">Gaby's Photography</h1>
+	<p> fotógrafa</p>
+</div>
+
+</section>
+       
+
+<h1 style="font-size: 50px">portafolio</h1>
+		<section id="portafolio" class="portafolio">
+			<div class="column">
+		<img class="demo cursor" src="cascadas.jpg"  style="width:50%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+	</div>
+	<div class="column">
+      <img class="demo cursor" src="mariposa%20facebook%20%202.jpg" style="width:50%" onclick="openModal();currentSlide(2)"class="hover-shadow cursor">
+
+         </div>
+
+ <div class="column">
+      <img class="demo cursor" src="embarao%203.jpg" style="width:50%" onclick="openModal();currentSlide(3)"class="hover-shadow cursor">
+         </div>
+
+
+			<div class="column">
+      <img class="demo cursor" src="ni%C3%B1a%202-psd.jpg"alt="cascadas" class="imagen" style="width:50%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+         </div>
+         <div class="column">
+      <img class="demo cursor" src="fotos%20para%20el%20libro%201.jpg" style="width:50%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+         </div>
+
+        <div class="column">
+      <img class="demo cursor" src="fotos%202%20para%20el%20libro%20y%20concurso%20.jpg" style="width:50%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+         </div>
+<div class="column">
+      <img class="demo cursor" src="fotos%20para%20el%20libro%203.jpg" style="width:50%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+         </div>
+     </div>
+     <div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+			
+			<h2>portafolio de fotos </h2>
+			<h6 >fotos </h6>
+			<div class="container">
+			<div class="mySlides">
+			<div class="numbertext">1 /7</div>
+			<img src="cascadas.jpg" alt="cascadas" class="imagen" style="width: 100%">
+			</div>
+
+			<div class="mySlides">
+			<div class="numbertext">2/7</div>
+			<img src="mariposa%20facebook%20%202.jpg" style="width: 100%">	
+		</div>
+		<div class="mySlides">
+		<div class="numbertext">3 /7</div>
+		<img src="embarao%203.jpg" style="width: 100%">
+			
+		</div>
+		<div class="mySlides">
+			<div  class="numbertext"> 4 /7</div>
+			<img src="ni%C3%B1a%202-psd.jpg" style="width: 100%">
+		</div>
+		<div class="mySlides">
+			<div class="numbertext"> 5 / 7 </div>
+			<img src="fotos%20para%20el%20libro%201.jpg" style="width: 100%">
+		</div>
+		<div class="mySlides">
+			<div class="numbertext">6 / 7</div>
+			<img src="fotos%202%20para%20el%20libro%20y%20concurso%20.jpg" style="width: 100%">
+		</div>
+		<div class="mySlides">
+			<div class="numbertext"> 7 / 7</div>
+			<img src="fotos%20para%20el%20libro%203.jpg" style="width: 100%">
+		</div>
+
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>	
+
+		 <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+		
+		<div class="row">
+		<div class="column">
+      <img class="demo cursor" src="cascadas.jpg" style="width:50%" onclick="currentSlide(1)" alt="cascadas" class="imagen">
+   
+  </div>
+  <div class="column">
+      <img class="demo cursor" src="mariposa%20facebook%20%202.jpg" style="width:50%" onclick="currentSlide(2)" alt="mariposa">
+         </div>
+
+<div class="column">
+      <img class="demo cursor" src="embarao%203.jpg" style="width:50%" onclick="currentSlide(3)" alt="embarazo">
+         </div>
+
+
+			<div class="column">
+      <img class="demo cursor" src="ni%C3%B1a%202-psd.jpg" style="width:50%" onclick="currentSlide(4)" alt="niña">
+         </div>
+         <div class="column">
+      <img class="demo cursor" src="fotos%20para%20el%20libro%201.jpg" style="width:50%" onclick="currentSlide(5)" alt="noche">
+         </div>
+
+        <div class="column">
+      <img class="demo cursor" src="fotos%202%20para%20el%20libro%20y%20concurso%20.jpg" style="width:50%" onclick="currentSlide(6)" alt="iglesia">
+         </div>
+<div class="column">
+      <img class="demo cursor" src="fotos%20para%20el%20libro%203.jpg" style="width:50%" onclick="currentSlide(7)" alt="puente">
+         </div>
+     </div>
+ </div>
+</section>
+</body>
+ <?php
+ e
+ ?>
+
+       
+		</section>
+
+		
+		<section id="sobre mi">
+		<div id="header">sobre mi </div>
+		<h3 >sobre mi </h3>
+		<div class="tab">
+
+			<p class="centrado"><strong>Todos los días nos levantamos con el mismo objetivo, capturar los mejores momentos de nuestros clientes; llevando así hermosos recuerdos de las mejores actividades personales y empresariales. <em>La naturaleza es nuestra inspiración y así como en el paisaje se cuidan todos los detalles, nosotros en nuestras fotografías cuidamos cada aspecto y cada detalle brindando una imagen de calidad, con el compromiso de que en cada fotografía se retrate la emoción vivida en el momento.ANA GABRIELA CHACÓN VALENCIANO | FOTÓGRAFA
+            EGRESADA  de la Universidad Creativa y he llevado cursos con Gustavo del  Valle , Rocio Escobar  y Mario Peraza </em>
+
+            <div class="container">
+        </strong>
+            	<div id="texto">
+
+            <button type="button" class="bnt bnt-sucesso" onclick="carcargarfoto()">mas informacion </button>
+
+            </p></div>
+        </div>
+   
+       
+ 		</section>
+
+ 		
+
+	 
+
+	<div class="main"></div>	
+	<section id= "contacto">
+		
+		<h4 class="contacto titulo">dejame tu informacion</h4>
+		<div id="container">
+		<form method="post" action="contactogabysphotography.php" >
+			<div class="row">
+			<div class="col-75">	
+		<label>nombre</label><input type="text" name="nombre" value="nombre" id="nombre"  onblur="validar( 'nombre',this.value) "placeholder="dejame tu nombre completo "><br><br>
+		<div id="nombre1">
+			
+		</div>
+	</div>
+		<div class="row">
+			<div class="col-75">
+		<label>apellido</label><input type="text" name="apellido" value="apellido"id="apellido"  onblur="validar( 'apellido',this.value) "placeholder="dejame tu apellido completo" ><br><br>
+		<div id="apellido1">
+		</div>
+	</div>
+	<div class="row">
+			<div class="col-75">
+				<label>telefono</label><input type="tel" name="Telefono"  id="Telefono" onblur="validar( 'telefono',this.value)"  placeholder="Teléfono"><br><br>
+		</div>
+	    <div class="row">
+			<div class="col-75">
+        <label>cedula</label><input type="text" name="cedula" value="cedula" id="cedula"onblur="validar( 'cedula',this.value)" placeholder="cedula completa "><br><br>
+		</div>
+		<div class="row">
+			<div class="col-75">
+		<label>correo</label><input type="text" name="email" value="email" id="email" onblur="validar( 'email',this.value)" placeholder="dejame tu correo completo"><br><br>
+	</div>
+	<div class="row">
+			<div class="col-75">
+		<label>fecha</label> <input type="date" name="fecha" value="fecha" id="fecha" ><br><br>
+	</div>
+
+        <label>el dia </label><select name="el dia" size="4" multiple><br><br>
+        	<div class="costm-select">
+        <option value="lunes">lunes</option>
+        <option value="martes">martes</option>
+        <option value="miercoles">miercoles</option>
+        <option value="jueves">jueves</option>
+        <option value="viernes">viernes</option>
+        <option value="sabado">sabado</option>
+        <option value="domingo">domingo</option>
+    </select><br><br>
+        <label>evento</label> <input list="evento"  name="evento">
+        <datalist id="evento">
+        	<option value="bodas"></option>
+        	<option value="15 años"></option>
+        	<optionva value=naturaleza>o</option>
+        		<option value="eventos especiales "></option>
+        	
+        </datalist><br><br>
+        <label>horas </label>
+        <label class="container">mañana
+        <input type="checkbox" >
+        <span class="checkmark"></span>
+    </label>
+     <label class="container">tarde
+        <input type="checkbox" >
+        <span class="checkmark"></span>
+    </label>
+     <label class="container">noche
+        <input type="checkbox" >
+        <span class="checkmark"></span>
+    </label>
+    		comnteario :<br><br>
+		<textarea maxlength="50" minlength="40"></textarea>
+		<input  class="button"type="reset" name="" value="borrar">
+
+	
+		
+		<button  class="button"onclick= "Myfuncion()">enviar</button><br><br>
+		<input onclick="checkForm()" type="button" value="enviar" class="bnt bnt-primary">
+		</datalist>
+	</form>
+<section>
+	<p><strong>mas contacto </strong>
+</section>
+
+	
+	
+	
+		
+	
+
+
+        
+		
+
+       
+   
+</section>
+        
+		
+		<button class="button "onclick="ejecultarsiguente()">siguiente </button>
+		<button class="button" onclick="ejecultarfotografia()">fotografia</button> <br><br>
+
+	<a href="#portafolio" class="previous">&laquo">previos</a>
+	<a href="#contacto" class="next">Next &raquo;</a>
+            
+  <input class="button" type="button" value="continuar " onclick="window.location.href='gabys photography informacion 2.html'"/>
+		
+	<footer style="background: black; color: white;">
+		<p>Gaby's Photography</p>
+	</footer>
+	<p>la hora de la PAGINA </p>
+
+<p id="demo"></p>
+
+
+	
+
+	</body>
+	</html>
+
+	
+	<script type="text/javascript" src="gabysphotographyfoto.js"></script>
+	
+	<script >
+		$(document).ready(function(){
+        
+    $("img").css("background-color","blue");   
+    
+    
+    
+    });
+		
+	</script>
+	
+	<script >
+	$(document).ready(function(){
+        
+    $("p").css("font-size","25px");    
+    
+    });
+
+    $(document).ready(function(){
+
+        $("img").click(function(){
+
+            $(this).slideToggle(100);
+        });
+    });
+        $(document).ready(function(){
+            $("p").click(function(){
+                $(this).fadeToggle(200);
+            });
+        });
+        
+    
+        </script>
+<script>
+   
+
+
+</script>
+
+        <script >
+        	$(document).ready(function(){
+        		$("h2").css("color","black");
+        	});
+        </script>
+        <script >
+        	$(document).ready(function(){
+        		$("h2").click(function(){
+        			$(this).hide();
+        		});
+        	});
+        </script>
+
+<script>
+    $(document).ready(function(){
+        $("section").click(function(){
+            $(this).fadeTo(300);
+        });
+    });
+
+
+
+
+</script>
+<script >
+	$(document).ready(function(){
+		$("h3").click(function(){
+			$(this).fadeToggle(300);
+		});
+
+	});
+</script>
+<script >
+	$(document).ready(function(){
+		$("h4").click(function(){
+			$(this).slideToggle(300);
+		});
+	});
+</script>
+<script type="text/javascript">
+function carcargarfoto() {
+     $("#texto").load("textf.txt");
+}
+</script>
+    
+
+	

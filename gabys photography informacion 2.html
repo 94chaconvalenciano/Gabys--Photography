@@ -1,0 +1,171 @@
+
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+<script src="https://code.jquery.com/jquery-1.12.4.js">
+        </script>
+    
+		<title> gabys photography</title>
+		<link rel="stylesheet" type="text/css" href="gabys%20photography%20%20pagina%20web%20.css">
+        <link href="https://fonts.googleapis.com/css?family=Istok+Web|Karla" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style type="text/css">
+	</style>
+	<main>
+
+	</head>
+	<body>
+   <section>  
+<h3>ver mas fotos </h3>
+<a target="_blank" href="fotos%20para%20el%20libro%201.jpg">
+    <img src="fotos%20para%20el%20libro%201.jpg" alt="noche" style="width: 350px">
+</a>
+            <a target="_blank" href="51874728_2332851323442607_1692716426046996480_n.jpg" >
+                <img src="51874728_2332851323442607_1692716426046996480_n.jpg" alt="calle" style="width: 350px">
+            </a>
+            <a target="_blank" href="cemnterio.jpg">
+            <img src="cemnterio.jpg" alt="cemeterio" style="width: 350px">
+            </a>
+            <a target="_blank" href="15%20a%C3%B1os.jpg">
+                <img src="15%20a%C3%B1os.jpg" alt="15años" style="width: 350px">
+            
+            </a>
+            <a target="_blank" href="emabarzo.jpg">
+                <img src="emabarzo.jpg" alt="embarazo" style="width: 350px">
+            
+            </a>
+           
+            
+            
+            </a>
+        <a target="-_blank" href="caryago.jpg">
+            <img src="caryago.jpg" alt="cartago" style="width: 350px;">
+        </a>
+      
+
+		
+
+
+            
+            
+        
+            
+           
+          
+
+        </section>
+        <section>
+            <h4>mas informacion</h4>
+    <p>trabajos de fotografia</p>
+ <h8>fotografias</h8>
+    <p id="demo"> fotografias y mis trabajos</p>
+    <button  class="button"type="button" onclick='document.getElementById("demo").innerHTML="soy una gran soñadora  y una profecional "'>cambias </button>
+
+
+
+
+  
+   
+                
+        </body>
+          <p id="text"> final </p>
+          <p>contrataciones:<input type="text" id="text3" value="contrataciones"></p>
+          <p>correo para contacto: <input type="text" id="text4" value="correo"></p>
+<button class="button" id="btn1">informacion </button>   
+<button class="button" id="btn3">contacto</button>
+<button class="button "id="btn4">correo</button>
+<a href="#portafolio" class="previous">&laquo">previos</a>
+     <div id="contenido">
+            </div>
+                <button type="button" id="bntcarga">foto</button>
+            </div>
+         
+   
+          <button class="open-button" onclick="form"></button>
+          <section>
+    <h7>paginas web</h7>
+          <a  class="ex1" href="https://www.facebook.com/Gabys-Photography-639695519424871/">Gabys-Photography</a>
+          <a href="facebook" class="fa fa-facebook"></a>
+</section>
+
+
+<h8>biografia</h8>
+
+<p>soy graduada de la ucreativa en la carrera <span id="dots">...</span>de fotografias en tomado varios cursos </p>
+<button onclick="leermas()" id="myBtn">ver mas </button>
+<img  class="sticky"src="foto%20gaby%20.jpg" alt="gabysphotography" style="width: 950px;">
+      </script>     
+    <script type="text/javascript" src="gabysphotography.js">
+        document.write("hola gabysphotography");
+    </script>
+
+<form></form>
+<script >
+    $(document).ready(function(){
+        $("h5").click(function(){
+            $(this).hide();
+
+        });
+    });
+</script>
+<script >
+    $(document).ready(function(){
+        $("div").css("font-size", "25px");
+    });
+</script>
+<script >
+    $(document).ready(function(){
+        $("p").click(function(){
+            $(this).hide();
+        });
+    });
+</script>
+<script >
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+           $("#text").text("final de la paginas muchas gracias por visita ");
+        });
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $("#btn3").click(function(){
+            $("#text3").val("telefono 88261230");
+        });
+    });
+</script>
+<script >
+    $(document).ready(function(){
+        $("#btn4").click(function(){
+            $("#text4").val("anagai95@hotmail.com");
+        });
+    });
+   
+</script>
+<script type="text/javascript">
+  $("#bntcarga").click(function(event) {
+    var esperar= 3000;
+    $.ajax({
+        url:"foto.html",
+
+        beforeSend:function() {
+            $('#contenido').text('cargando...');
+           
+        },
+        success:function (data){
+            setTimeout(function(){
+                $("#contenido").html(data);
+
+            }
+            );
+          
+        }
+      });
+     
+  });
+        
+    </script>
+
+
+
+	</html>
