@@ -42,7 +42,7 @@ h3{
 h2{
 	font-family: 'Black And White Picture', sans-serif;
 	font-size: 40px;
-	color: gold;
+	color: blue;
 	text-transform: capitalize;
 	text-decoration: unset;
 	text-align: center;
@@ -50,6 +50,64 @@ h2{
   margin-left: 100px,150px,70px,30px
 	
 
+}
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+li{
+	float: left;
+}
+li a{
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px,16px;
+	text-decoration: none;
+	 overflow: auto;
+  white-space: nowrap;
+
+}
+div.scrollmenu {
+  background-color: #CD853F;
+  overflow: auto;
+  white-space: nowrap;
+}
+div.scrollmenu a {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px;
+	text-decoration: none;
+
+}
+div.scrollmenu a:hover{
+	background-color: red;
+}
+.active{
+	background-color: #D2691E;
+}
+p.centrado{
+	font-size: 20px;
+	 height: 450px;
+    margin: 5px;
+    border-width: 5px;
+    border-left: 10px solid pink;
+    margin: 100px 150px 70px 30px;
+    margin-left: 100px,150px,70px,30px
+    padding-left: 15px;
+    padding: 15px;
+    padding-right: 15px;
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: inline;
+    display: flex;
+    flex-wrap: nowrap;
+
+    
 }
 
 h4{
@@ -60,8 +118,10 @@ font-family: 'Black And White Picture', sans-serif;
  	border-bottom-left-radius: 10px;
  	border-left-style: 10px;
  margin: 100px 150px 70px 30px;
-  margin-left: 100px,150px,70px,30px
-	
+  margin-left: 100px,150px,70px,30px;
+  animation-delay: 2s;
+  
+  
 }
  form{
  	
@@ -78,59 +138,90 @@ font-family: 'Black And White Picture', sans-serif;
 
  
  }
- input{
- 	box-shadow: black;
- 	color: black;
-    border-style: 15px;
- 	box-sizing: 15px;
+ input[type=text]{
+ 	width: 100%
+ 	padding 12px;
+ 	margin: 5px 0 22 0;
+ 	border: 2px solid #ccc;
+ 	display: inline-block;
+ 	border-radius: 4px;
+ 	background: #f1f1f1;
+ 	box-sizing: border-box;
+ 	margin-top: 6px;
+ 	margin-bottom: 16px;
+ 	resize: vertical;
 
  	}
-div.scrollmenu a{
-	background: gold;
-	overflow: auto;
-	white-space: nowrap;
+  input[type=text]:focus{
+  	background: white;
+  	outline: none;
+  }
+  .button{
+  	background: #800000;
+  	color: white;
+  	padding: 13px 19px;
+  	margin: 8px 0;
+  	border: none;
+  	cursor: pointer;
+  	width: 100%;
+  	opacity: 0.9;
 
+
+  }
+  .button:hover{
+  	opacity: 1;
+  }
+  .cancelarbtn{
+  	padding: 14 20px;
+  	background: #8B4513;
+  }
+  .cancelarbtn{
+  	float: left;
+  	width: 50%;
+  }
+  .container{
+  	border-radius: 5px;
+  	background-color: #C0C0C0;
+  	padding: 20px;
+  }
+  .modal-content{
+  	background: #D5DBDB  ; 
+  	margin: 5% auto 15% auto;
+  	border: 1px solid #F7F9F9;
+  	width: 80%;
+  }
+  hr{
+  	 border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
 }
-div.scrollmenu a{
-	display: inline-block;
-	color: black;
-	text-align: center;
-	padding: 14px;
-	text-decoration: none;
+.close{
+	position: absolute;
+	right: 35px;
+	top: 15px;
+	font-size: 40px;
+	font-weight: bold;
+	color: #E9967A
 }
-	div.scrollmenu a:hover{
-		background: brown;
-	}
-
-
-
-
-
-
-
+.close:hover,
+.close:focus{
+	color: #DC143C;
+	cursor: pointer;
 }
-p.centrado{
-	
-    font-size: 25px;
-    letter-spacing: 10px;
-    height: 450px;
-    margin: 5px;
-    border-width: 5px;
-    border-left: 10px solid pink;
-    margin: 100px 150px 70px 30px;
-    margin-left: 100px,150px,70px,30px
-    padding-left: 15px;
-    padding: 15px;
-    padding-right: 15px;
-    display: inline-block;
-    margin-left: 15px;
-    margin-right: 15px;
-    display: inline;
-    display: flex;
-    flex-wrap: nowrap;
-
-
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
+
+
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+
+
 section {
 	text-align: center;
 	color: black;
@@ -141,10 +232,14 @@ section {
 	
 }
 footer{
-	height: 50px;
-	margin: 15px;
-	margin-left: 15px;
-	flex-wrap: wrap;
+	text-align: left;
+	text-align: left;
+background-color: #CD853F;
+	color: white;
+	font-size: 25px;
+	  height: 150px;
+	
+
 }
 
 h5{
@@ -176,7 +271,7 @@ display: inline-block;
 }
 label{
 	color: brown;
-	background: white; 
+	font-size: 15px;
 	
 }
 .flexbox{
@@ -214,7 +309,7 @@ h7{
 	color: blue;
 	text-align: left;
 }
-input{
+
 	 
 	
 }
@@ -242,7 +337,7 @@ body{
 	box-sizing: border-box;
 }
 .row> .colomn{
-	padding: 0.8px
+	padding: 10px
 
 }
 .row:after{
@@ -252,7 +347,9 @@ body{
 }
 .colum {
 	float: left;
+	text-align: left;
 	width: 25%;
+	display: table;
 }
 .modal{
 	display: none;
@@ -262,20 +359,21 @@ body{
 	left:0px;
 	top: 0px;
 	width: 100px,
+	height: 100%;
 	overflow:auto;
-	background-color: black;
+	
 }
 
 .model-content{
 	position: relative;
-	background-color: gold;
+	background-color:#CD853F ;
 	margin: auto;
 	padding: 0px,
 	width:90%;
 	max-width: 1300px;
 }
 .close{
-	color: white;
+	color: #BA4A00  ;
 	position: absolute;
 	top: 10px;
 	right: 25px;
@@ -290,14 +388,14 @@ body{
 
 }
 .mySlides{
-	display: none;
+	display: inline-block;
 }
 .container {
 	position: relative;
 	vertical-align: top;
 }
 .mySlides{
-	display: none;
+	display: inline-block;
 }
 .cursor{
 	cursor: pointer;
@@ -330,7 +428,7 @@ body{
 	background-color: rgba(0, 0, 0,  0,8);
 }
 .numbertext{
-	 color:gold;
+	 color:#A0522D;
 	 font-size: 15px;
 	 padding: 9px, 16px;
 	 position: absolute;
@@ -338,10 +436,10 @@ body{
 
 }
 .caption-container{
-	text-align: center;
+	text-align: left;
 	background: gold;
-	padding: 2px,16px
-	color white;
+	padding: 14px,20px;
+	color: white
 }
 
 .demo{
@@ -383,12 +481,13 @@ a{
 	padding: 8px,16px;
 }
 a:hover{
-	background: gold;
+	background:#D2691E; 
 	color: blue;
 }
 .previos{
-	background: red;
-	color:black;
+	background: #f44336;
+	color:#273746;
+	text-align: left;
 }
 .next{
 	background: black;
@@ -398,23 +497,9 @@ a:hover{
 	border-radius: 50%;
 }
 
-.button{
-	padding: 15px,20px;
-	font-size: 15px;
-	text-align: center;
-	cursor: pointer;
-	outline: none;
-	
-	
-}
 
 
-.button: active{
-	background-color: blue;
-	box-shadow: 0 5px #666;
-	transform: translateY(4px);
 
-}
 .fa{
 	padding: 20px;
 	font-size: 30px;
@@ -478,27 +563,10 @@ a:hover{
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* width */
--webkit-scrollbar{
-	width: 20px;
 
-}
--webkit-scrollbar-track {
-	box-shadow: inset 0 0 5 grey;
-    border-radius: 10px;
-}
--webkit-scrollbar-thumb {
-  background: red; 
-  border-radius: 10px;
-}
-
-/* Handle on hover */
--webkit-scrollbar-thumb:hover {
-  background: #b30000; 
-}
 
 	
-}
+
 .accordion {
   background-color: #eee;
   color: #444;
@@ -552,6 +620,9 @@ img:hover {
  	-ms-flex: 50%;
  	flex: 50%;
  	padding: 0.4px;
+ 	float: left;
+ 	width: 33.33%
+ 	padding 5px
  }
  .columna img{
  	margin-top: 8px;
@@ -573,7 +644,7 @@ img:hover {
  	color: white;
  }
   button {
- 	background-color: brown;
+ 	background-color: #D2691E;
  	border: none;
   color: white;
   padding: 16px 32px;
@@ -587,44 +658,27 @@ button :hover {
   background-color: blue;
   color: white;
 }
- 	
- }
- #ListaImagenes{
- 	position: relative;
- 	height: 700px;
- 	  min-height: 100px;
-    margin: 5px;
-    overflow: auto;
+ 	#ListaImagenes{
+	position: relative;
+	height: 800px;
+	min-height: 800px;
+	margin:10px;
+	overflow: none;
+
 }
 #imagenGrande{
 	position: absolute;
 	top:0px;
-	left: 50px;
+	left: 5px;
 	width: 50px;
 	height: 50px;
 	min-height: 100px;
-
- }
- #ListaImagenes{
- 	position: relative;
- 	height: 1000px;
- 	  min-height: 100px;
-    margin: 15px;
-    overflow: auto;
 }
-#imagenGrande{
-	position: absolute;
-	top:0px;
-	left: 800px;
-	width: 700px;
-	height: 700px;
-	min-height: 500px;
-
- }
- img{
- 	width: 650px;
-
- }
+img{
+	width: 650px;
+}
+ 
+ 
  .dropdown{
  	position: absolute;
  	display: inline-block;
@@ -661,3 +715,27 @@ div.desc {
   padding: 15px;
   text-align: center;
 }
+.columnase{
+
+	max-width: 25%;
+	padding: 0.4px;
+
+}
+.columnase img {
+	margin-top: 5px;
+	vertical-align: middle;
+}
+@media screen and (max-width: 500px){
+	.columnase{
+		flex: 25%;
+		max-width: 50%;
+	}
+}
+@media screen and(max-width: 400px){
+	.columnase{
+		-ms-flex:100%;
+		flex: 100%;
+		max-width: 100%;
+
+	
+

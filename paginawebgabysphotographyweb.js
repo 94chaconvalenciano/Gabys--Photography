@@ -45,8 +45,10 @@ function Myfuncion(){
 	var nombre=document.getElementById('nombre').value;
 	var apellido=document.getElementById('apellido').value;
 	var telefono =document.getElementById('telefono').value;
+  var cedula=document.getElementById('cedula').value;
+  var comentarios = document.getElementById('comentarios').value;
 	var email=document.getElementById('email').value;
-    var cedula=document.getElementById('cedula').value;
+
 	if(nombre ==""||nombre==null){
 		alert("debe completar el nombre ");
 	}
@@ -63,7 +65,12 @@ function Myfuncion(){
 	}
   if (cedula ==""||cedula==null) {
 		alert("debe completar la cedula ");
+
 }
+ if (comentarios ==""||comentarios==null) {
+  alert("debe completar los comentarios");
+
+ }
  function saludar(){
 	alert("debe completar toda la informacion para poder enviar sus consultas o dudas y tiene que estar con su informacion veradadera  ");
 }
@@ -137,38 +144,11 @@ function myFunction(imgs) {
 var elements=document.getElementsByClassName("columna");
 var i;
 
-function one() {
- for (i = 0; i < elements.length; i++) {
-    elements[i].style.msFlex = "100%";  
-    elements[i].style.flex = "100%";
-  }
-}
+f
+    var modal=document.getElementById("id101");
 
-function two() {
- for ( i = 0; i < elements.length; i++) {
-  elements[i].style.msFlex= "50%";
-  elements[i].style.flex= "50%";
- }
-  
-}
-
-function four() {
-  for (i = 0; i < elements.length; i++) {
-   elements[i].style.msFlex= "25%";
-   elements[i].style.flex= "25%";
-  }
-  // body...
-}
-
-
-var header= document.getElementById("myHeader");
-var btns = document.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btn[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
-
-    
+    window.onclick=function (event) {
+     if (event.target == modal ) {
+      modal.style.display="none";
+     } // body...
+    }
